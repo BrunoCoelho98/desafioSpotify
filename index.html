@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Música para todos</title>
+    <link rel="icon" href="imagens_icones/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#" title="Spotify">
+                    <img src="imagens_icones/spotify.svg" alt="Spotify Logo" width="164">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ajuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Baixar</a>
+                        </li>
+                        <li class="nav-item divisor"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inscrever-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="d-flex">
+        <div class="container align-self-center capa">
+            <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1>Música para todos</h1>
+                        <a href="#" class="btn btn-lg btn-custom btn-roxo">Aproveite o Spotify Free</a>
+                        <a href="#" class="btn btn-lg btn-custom btn-branco">Obter Spotify Premium</a>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>As melhores rádios</h1>
+                        <a href="#" class="btn btn-lg btn-custom btn-branco">
+                            <i class="fas fa-music"></i> Ouça agora</a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-spotify" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left fa-3x"></i>
+                </a>
+                <a class="carousel-control-next" href="#carousel-spotify" role="button" data-slide="next">
+                    <i class="fas fa-angle-right fa-3x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row albuns">
+                        <div class="col-md-6">
+                            <img src="imagens_icones/img1.jpg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens_icones/img2.jpg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                    </div>
+                    <div class="row albuns">
+                        <div class="col-md-6">
+                            <img src="imagens_icones/img3.jpg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens_icones/img4.jpg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-section" id="content">
+                    <h2>O que o Spotify tem?</h2>
+                    <h3>Músicas</h3>
+                    <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+                    <h3>Playlists</h3>
+                    <p>No Spotify você encontra uma playlist para cada momento. <br>Todas feitas por fanáticos e especialistas da música.</p>
+                    <h3>Novos lançamentos</h3>
+                    <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.img-custom');
+            const contentDiv = document.querySelector('#content');
+            const contentSection = document.querySelector('.content-section');
+    
+            const contentMap = {
+                'img1.jpg': {
+                    title: 'O que é Lorem Ipsum?',
+                    items: [
+                        { subtitle: 'Por que é que o usamos?', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non elit dictum, viverra ex id, efficitur felis.' },
+                        { subtitle: 'De onde é que ele vem?', text: 'Aenean gravida et eros id finibus.' },
+                        { subtitle: 'Onde posso arranjar algum?', text: 'Nullam risus nunc, ultricies sed rhoncus sed, eleifend vitae ipsum. Maecenas vel luctus lectus.' }
+                    ]
+                },
+                'img2.jpg': `
+                    <div id="content" class="centered-content">
+                        <h2>O que é Lorem Ipsum?</h2>
+                        <h3>Por que é que o usamos?</h3>
+                        <p>Ut vitae suscipit risus, non ultricies felis. Vestibulum at lectus eget risus suscipit interdum at ac lorem. Morbi vulputate purus nisi, eget ornare purus pretium quis.</p>
+                    </div>
+                `,
+                'img3.jpg': `
+                <div id="content">
+                    <h2 class="slide-in-right">O que é Lorem Ipsum?</h2>
+                    <h3>Por que é que o usamos?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non elit dictum, viverra ex id, efficitur felis..</p>
+                    <h3 class="slide-in-right">De onde é que ele vem?</h3>
+                    <p>Aenean gravida et eros id finibus.</p>
+                    <h3>Onde posso arranjar algum?</h3>
+                    <p>Nullam risus nunc, ultricies sed rhoncus sed, eleifend vitae ipsum. Maecenas vel luctus lectus.</p>
+                </div>
+                `,
+                'img4.jpg': `
+                <div class="overcell">
+                    <div class="row albuns">
+                        <div class="col-md-6">
+                            <img src="imagens_icones/1.jpeg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens_icones/2.jpeg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                    </div>
+                    <div class="row albuns">
+                        <div class="col-md-6 overcell">
+                            <img src="imagens_icones/3.jpeg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens_icones/4.jpeg" class="img-fluid img-custom d-none d-md-block" alt="">
+                        </div>
+                    </div>
+                </div>
+                `,
+            };
+    
+            images.forEach(image => {
+                image.addEventListener('click', function() {
+                    const imgSrc = this.src.split('/').pop();
+                    const content = contentMap[imgSrc];
+    
+                    if (content) {
+                        contentSection.classList.add('hidden');
+                        setTimeout(() => {
+                            let htmlContent = '';
+    
+                            if (typeof content === 'string') {
+                                htmlContent = content;
+                            } else {
+                                htmlContent = `<h2>${content.title}</h2>`;
+                                content.items.forEach(item => {
+                                    htmlContent += `<h3>${item.subtitle}</h3><p>${item.text}</p>`;
+                                });
+                            }
+    
+                            contentDiv.innerHTML = htmlContent;
+                            contentSection.classList.remove('hidden');
+                        }, 200);
+                    }
+                });
+            });
+        });
+    </script>
+    
+
+    <section id="recursos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Fácil</h2>
+                    <h3>Buscar</h3>
+                    <p>Já sabe o que quer escutar? É só procurar e apertar o play.</p>
+                    <h3>Navegar</h3>
+                    <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.</p>
+                    <h3>Descobrir</h3>
+                    <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row rotacionar">
+                        <div class="col-md-6">
+                            <img src="imagens_icones/iphone1.png" class="img-fluid d-none d-md-block" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens_icones/iphone2.png" class="img-fluid d-none d-md-block" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="imagens_icones/spotify.svg" width="164" alt="">
+                </div>
+                <div class="col-md-2">
+                    <h4>Company</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Empregos</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Comunidades</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="#">Artistas</a></li>
+                        <li><a href="#">Desenvolvedores</a></li>
+                        <li><a href="#">Marcas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Links Úteis</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="#">Ajudas
+                        <li><a href="">Presentes</a></li>
+                        <li><a href="">Players da web</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                    <a href="" class="mr-2"><img src="imagens_icones/facebook.png" class="img-fluid" alt=""></a>
+                    <a href="" class="mr-2"><img src="imagens_icones/twitter.png" class="img-fluid" alt=""></a>
+                    <a href="" class="mr-2"><img src="imagens_icones/instagram.png" class="img-fluid" alt=""></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
+
